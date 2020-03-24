@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qiang.springbootmybatis.dao.mapper.VInOutMapper">
+    <insert id="insert" parameterType="com.qiang.springbootmybatis.dao.entity.VInOutEntity">
+        insert into v_inout (name,adress,stime,etime) values (#{name},#{adress},#{stime},#{etime});
+    </insert>
+    <select id="getAll" resultType="com.qiang.springbootmybatis.dao.entity.VInOutEntity">
+        select * from v_inout;
+    </select>
+</mapper>
